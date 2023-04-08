@@ -1,0 +1,93 @@
+/*--- Addon custom 30/11/2019 ---*/
+.vote-voyant,
+.note-voyant {
+	display:inline-block;
+	line-height:18px;
+	float:right;
+}
+.vote-voyant {
+	text-align:right;
+}
+.vote-voyant i {
+	letter-spacing:-5px;
+	font-size:12px;	
+}
+.vote-voyant i.check {
+	color:#FFD700;	
+}
+.note-voyant {	
+	margin:0 5px 0 10px;
+	font-size:13px;
+	font-weight:300;
+}
+.alert {
+    position: relative;
+    z-index: 200;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    width: 100%;
+	padding: 10px 10px;
+}
+.alert span {
+    font-size: 26px;
+    font-weight: 700;
+    border: 1px solid #004085;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: block;
+    line-height: 25px;
+}
+.alert-dismissible {
+    padding-right: 50px;
+}
+.close {
+	filter: alpha(opacity=60);
+	opacity: .6;
+}
+.alert-dismissible .close {
+    padding: 10px 10px;
+}
+.alert p {
+	margin-bottom:5px;
+	font-size:14px;
+	line-height:18px;
+	letter-spacing:-.5px;
+}
+.alert h5 {
+	margin-bottom:0;
+}
+.notation {
+	text-align:center;
+}
+.notation input[type=radio] {
+	position: absolute;
+	visibility: hidden;
+	display: none;
+}
+.notation label {
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	width:26px;
+	height:26px;
+	margin: 0 2px 5px;
+	font-size:16px;
+	border: 1px solid #004085;
+	border-radius:50%;
+	text-align:center;
+	line-height:23px;
+}
+.notation input[type=radio]:checked + label {
+	color: #004085;
+	background: #FFF;
+}
+.notation .radio-group {
+	border: none;
+	display: inline-block;
+	margin: 5px 0px;
+	border-radius: 8px;
+}
+/*---end custom 30/11/2019 ---*/
+
+/* MORE CUSTOM CSS */
