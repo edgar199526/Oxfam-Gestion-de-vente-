@@ -63,10 +63,24 @@ function CallAPI($method, $apikey, $url, $data = false)
                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
             break;
+
+        case "DELETE":
+
+        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'DELETE');
+            $httpheader[] = "Content-Type:application/json";
+
+            if ($data)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+
+            break;
+
         default:
+
             if ($data)
                 $url = sprintf("%s?%s", $url, http_build_query($data));
     }
+
+    //die($url);
 
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
